@@ -1,0 +1,20 @@
+{% load my_templatetags %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/static/database_app/css/main.css">
+        <title>Database</title>
+    </head>
+    <body>
+        <!-- root is replaced by React contents, see index.js -->
+        <center><div id="root"></div></center>
+    </body>
+    <script type="text/javascript">
+    	window.props = {{props|json}}
+    	window.react_mount = document.getElementById('root');
+    </script>
+    <!-- <script src="example-database-app/build/static/js/{{component}}"></script> -->
+    <script src="/static/database_app/js/{{component}}"></script>
+</html>
