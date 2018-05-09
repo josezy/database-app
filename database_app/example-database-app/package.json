@@ -1,0 +1,19 @@
+{
+  "name": "example-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.0.17",
+    "redux": "^3.7.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "postbuild": "copy build\\static\\js\\*.js ..\\static\\database_app\\js\\main.js && copy build\\static\\css\\*.css ..\\static\\database_app\\css\\main.css",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
