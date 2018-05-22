@@ -2,7 +2,7 @@
 Database application using Django as backend and React-Redux (from Monadical example).
 
 To test the project:
-1. git clone ​https://github.com/josezy/database-app​
+1. git clone https://github.com/josezy/database-app.git
 2. cd database-app
 3. python manage.py runserver
 4. Go to http://localhost:8000/database_app/
