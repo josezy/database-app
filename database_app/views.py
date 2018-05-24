@@ -33,6 +33,7 @@ def index(request):
         }
         return HttpResponse(template.render(context, request))
 
+# Just a comment
 def getProps():
     props = {}
     for t in Transaction.objects.all().order_by('date'):
