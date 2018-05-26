@@ -12,6 +12,7 @@ from .models import Transaction
 
 import json
 
+# adding a comment on fixes branch
 @csrf_exempt
 def index(request):
     if request.method == 'POST':
